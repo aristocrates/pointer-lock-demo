@@ -101,8 +101,10 @@ function canvasLoop(e) {
       e.webkitMovementY   ||
       0;
 
-  x += movementX;
-  y += movementY; 
+  x += movementX * 2;
+  y += movementY * 2;
+  x += Math.floor(Math.random()*3 - 1);
+  y += Math.floor(Math.random()*3 - 1);
 
   canvasDraw();
 
